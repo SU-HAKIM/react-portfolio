@@ -1,2 +1,21 @@
 '@babel/plugin-proposal-class-properties'
 "@babel/plugin-transform-spread",
+//
+"generatorOpts": {
+    "retainFunctionParens": true
+  },
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "node": "4.8"
+      },
+      "forceAllTransforms": true
+    }]
+  ],
+  ///
+
+  '@babel/plugin-transform-classes',
+        '@babel/plugin-proposal-class-properties'
+
+        //
+         '@babel/plugin-syntax-class-properties'

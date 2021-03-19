@@ -1,2 +1,6 @@
-import { add } from "./other.js";
-console.log(add());
+let obj = {
+  a: 10,
+  b: 20
+};
+let objArr = [['a', 10], ['b', 20]];
+console.log(Object.fromEntries(objArr));
