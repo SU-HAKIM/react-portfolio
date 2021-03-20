@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>projects</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- font awesome -->
     <link rel="stylesheet" href="./bootstrap.min.css">
     <link rel="stylesheet" href="./dist/scss/main.css">
 </head>
@@ -13,7 +16,7 @@
 <body>
     <!-- navbar starts here -->
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id='navbar'>
         <div class="container">
             <a class="navbar-brand" href="index.html">MDB</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -30,10 +33,13 @@
                         <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#skill">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -95,10 +101,106 @@
             </div>
         </div>
         </div>
+        <!-- SKILL SECTION STARTS HERE -->
+        <div class="skill p-5" id='skill'>
+            <div class="container">
+                <div class="skill-head py-3">
+                    <h4>Skills that i have or i'll gain : </h4>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 skill-left py-3">
+                        <h4>Education : </h4>
+                        <small>I am a NON-CSE Developer</small>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet aliquam pariatur quas hic iste quod perspiciatis, expedita officiis, veritatis praesentium accusantium, sapiente corporis! Quas, unde?</p>
+                    </div>
+                    <div class="col-lg-6 skill-right py-3">
+                        <h4>Languages that i know or i'll know : </h4>
+                        <ul>
+                            <li class='html'>HTML</li>
+                            <li class='css'>CSS</li>
+                            <li class='scss'>SCSS</li>
+                            <li class='boot'>BOOTSTRAP</li>
+                            <li class='js'>JS</li>
+                            <li class='react'>REACT</li>
+                            <li class='php'>PHP</li>
+                            <li class='laravel'>LARAVEL</li>
+                            <li class='mysql'>MYSQL</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row skill-tech py-4">
+                    <h4>Technologies that i use : </h4>
+                    <ul>
+                        <li>NPM</li>
+                        <li>SNOWPACK</li>
+                        <li>GIT</li>
+                        <li>DOCKER</li>
+                        <li>VSCODE</li>
+                        <li>GITHUB</li>
+                        <li>WEB STORM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- about section -->
+        <div class="about p-5" id='about'>
+            <div class="container">
+                <div class="row about-head text-white">
+                <h4>This is about Me section : </h4>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 about-left text-white">
+                    <h3>I am Sadiul Hakim</h3>
+                    <small>A FuTure Web Developer</small>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sapiente, assumenda voluptatum magnam maxime debitis possimus quae neque similique quis nisi deleniti amet cupiditate sint, quidem harum ex dolore rem.</p>
+                </div>
+                <div class="col-lg-6 about-right">
+                    <img src="./images/sadi.jpg" class='img-fluid img-thumbnail rounded rounded-circle' alt="">
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- contact starts -->
+        <div class="contact p-5" id='contact'>
+            <div class="container w-75">
+                <div class="row contact-head">
+                    <h4>Contact Me :</h4> </div>
+                <form action="mailto:bmsuhakim@gmail.com" method='POST' enctype="text/plain" class='was-validate'>
+                <div class="form-group">
+                    <input class='form-control' type="text" placeholder="User Name" required>
+                    <div class="valid-feedback">Successfull</div>
+                    <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="form-group">
+                    <input class='form-control' type="email" placeholder="User Email" required>
+                    <div class="valid-feedback">Successfull</div>
+                    <div class="invalid-feedback">Please enter your email address.</div>
+                </div>
+                <div class="form-group">
+                    <textarea class='form-control' id="" cols="30" rows="10"></textarea>
+                </div>
+                <input class='form-control' type="submit" value="Send">
+                <input class='form-control' type="reset" value="Clear">
+                </form>
+            </div>
+        </div>
+    
+    <!-- footer -->
+    <div class='footer'>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    
+                </div>
+                <div class="col-lg-6">
+                    <a href='index.html'>Top..</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- main section ends -->
+    </div>
 </body>
 <script src="./bootstrap.min.js"></script>
-<script src="./dist/js/main.js"></script>
+<script type='module' defer src="./dist/js/main.js"></script>
 
 </html>

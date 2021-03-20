@@ -183,9 +183,10 @@ body {
 
         // text-align: center;
         div {
+            display: inline-block;
+
             h1 {
                 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                display: inline-block;
                 text-transform: uppercase;
 
                 &:hover {
@@ -253,6 +254,343 @@ body {
             background: url('../images/canstockphoto6106398.jpg');
             background-position: center;
             background-size: cover;
+        }
+    }
+}
+
+// skill section
+.skill {
+    background-color: $secondary-bg;
+
+    &-head {
+        @include maxMediaB(330px) {
+            h4 {
+                font-size: 90%;
+            }
+        }
+
+        display: inline-block;
+
+        h4 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-transform: uppercase;
+
+            &:hover {
+                color: rgb(0, 95, 95);
+            }
+        }
+    }
+
+    &-left {
+        @include maxMediaB(330px) {
+            h4 {
+                font-size: 90%;
+            }
+        }
+
+        h4 {
+            border-bottom: 3px solid rgb(202, 202, 202);
+            padding-bottom: 10px;
+        }
+
+        small {
+            font-style: italic;
+            color: #f6f6f6;
+
+            &:hover {
+                color: rgb(0, 95, 95);
+            }
+        }
+    }
+
+    &-right {
+        @include maxMediaB(330px) {
+            h4 {
+                font-size: 90%;
+            }
+        }
+
+        // background: #00071f;
+        h4 {
+            font-family: 'Trebuchet MS',
+                'Lucida Sans Unicode',
+                'Lucida Grande',
+                'Lucida Sans',
+                Arial,
+                sans-serif;
+            display: inline-block;
+            text-transform: uppercase;
+
+            &:hover {
+                color: rgb(0, 95, 95);
+            }
+        }
+
+        ul {
+            li {
+                list-style: none;
+                padding: 10px 0px;
+                position: relative;
+            }
+
+            li::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 10px;
+                background: #00071f;
+                top: calc(100% - 6px);
+                left: 0;
+            }
+
+            li::after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 10px;
+                background: #c7c7c7;
+                top: calc(100% - 6px);
+                left: 0;
+            }
+
+            .html::after {
+                animation: html 2s linear forwards;
+            }
+
+            .css::after {
+                animation: css 2s linear forwards;
+            }
+
+            .scss::after {
+                animation: scss 2s linear forwards;
+            }
+
+            .boot::after {
+                animation: boot 2s linear forwards;
+            }
+
+            .js::after {
+                animation: js 2s linear forwards;
+            }
+
+            .react::after {
+                animation: react 2s linear forwards;
+            }
+
+            .php::after {
+                animation: php 2s linear forwards;
+            }
+
+            .laravel::after {
+                animation: laravel 2s linear forwards;
+            }
+
+            .mysql::after {
+                animation: mysql 2s linear forwards;
+            }
+        }
+    }
+
+    &-tech {
+        @include maxMediaB(330px) {
+            h4 {
+                font-size: 90%;
+            }
+        }
+
+        h4 {
+            padding-bottom: 15px;
+            font-family: 'Trebuchet MS',
+                'Lucida Sans Unicode',
+                'Lucida Grande',
+                'Lucida Sans',
+                Arial,
+                sans-serif;
+            display: inline-block;
+            text-transform: uppercase;
+
+            &:hover {
+                color: rgb(0, 95, 95);
+            }
+        }
+
+        ul {
+            list-style: none;
+            line-height: 1.9;
+
+            li {
+                display: inline-block;
+                padding: 0px 20px;
+                background: #31394e;
+
+                &:hover {
+                    color: rgb(0, 95, 95);
+                }
+
+                margin-bottom:10px;
+            }
+        }
+    }
+}
+
+//@keyframes
+@keyframes html {
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes css {
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes scss {
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes boot {
+    to {
+        width: 85%;
+    }
+}
+
+@keyframes js {
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes react {
+    to {
+        width: 85%;
+    }
+}
+
+@keyframes php {
+    to {
+        width: 85%;
+    }
+}
+
+@keyframes laravel {
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes mysql {
+    to {
+        width: 90%;
+    }
+}
+
+// end
+//about
+.about {
+    &-head {
+        padding-bottom: 10px;
+        display: inline-block;
+
+        h4 {
+            padding-bottom: 15px;
+            font-family: 'Trebuchet MS',
+                'Lucida Sans Unicode',
+                'Lucida Grande',
+                'Lucida Sans',
+                Arial,
+                sans-serif;
+            text-transform: uppercase;
+
+            &:hover {
+                color: rgb(0, 95, 95);
+            }
+        }
+    }
+
+    &-left {
+        margin-top: 50px;
+
+        h3 {
+            text-transform: uppercase;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: inline-block;
+
+            &:hover {
+                color: crimson;
+            }
+        }
+
+        small {
+            display: block;
+            font-style: italic;
+            text-transform: uppercase;
+            margin: 5px 0;
+
+            &:hover {
+                color: rgb(0, 95, 95);
+            }
+        }
+    }
+
+    &-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 300px;
+            width: 300px;
+            opacity: .5;
+            transition: all .5s linear;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+//contact
+.contact {
+    &-head {
+        padding-bottom: 10px;
+        display: inline-block;
+
+        h4 {
+            padding-bottom: 15px;
+            font-family: 'Trebuchet MS',
+                'Lucida Sans Unicode',
+                'Lucida Grande',
+                'Lucida Sans',
+                Arial,
+                sans-serif;
+            text-transform: uppercase;
+
+            &:hover {
+                color: rgb(0, 95, 95);
+            }
+        }
+    }
+
+    background: $secondary-bg;
+
+    form {
+        padding: 20px 0px;
+
+        input,
+        input:focus,
+        textarea,
+        textarea:focus {
+            background: #003158;
+            margin: 10px 0px;
+            color: white;
+            outline: none;
+            resize: none;
+            border: none;
         }
     }
 }
