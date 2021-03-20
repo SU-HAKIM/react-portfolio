@@ -1,0 +1,34 @@
+$main-bg:#000f29;
+$secondary-bg:#001735;
+$scrollbar-color:#1a1b1e;
+
+@mixin flexing($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin maxMedia($width) {
+    @media screen and(max-width:$width) {
+        @content;
+    }
+}
+
+@mixin maxMediaA($width) {
+    @media screen and(max-width:$width) {
+        @content;
+    }
+}
+
+@mixin maxMediaB($width) {
+    @media screen and(max-width:$width) {
+        @content;
+    }
+}
+
+@mixin minMedia($width) {
+    @media screen and(min-width:$width) {
+        @content;
+    }
+}

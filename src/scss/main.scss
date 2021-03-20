@@ -1,3 +1,258 @@
+/*
+"./images/pic1.jpg",
+"./images/canstockphoto6106398.jpg"
+*/
+@use "./config"as *;
+@use "./utilities";
+@use "./media";
+
 * {
     box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: $main-bg;
+    scroll-behavior: smooth;
+}
+
+/*
+    scrollbar
+*/
+::-webkit-scrollbar {
+    background-color: $main-bg;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $main-bg;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $scrollbar-color;
+    border: 1px solid #000;
+
+}
+
+// end
+.navbar {
+    background: $main-bg;
+
+    @include maxMedia(990px) {
+        box-shadow: 0 0 7px 5px #000;
+    }
+
+    &-brand {
+        font-size: 1.2rem;
+        font-weight: bolder;
+    }
+}
+
+.main {
+    @include maxMedia(990px) {
+
+        .svg-side {
+            display: none;
+        }
+
+        .desc-side {
+            margin-top: 15%;
+            text-align: center;
+            padding-bottom: 20px;
+
+            h4 {
+                font-size: 3.8rem !important;
+            }
+        }
+    }
+
+    @include maxMediaA(530px) {
+        .desc-side {
+            padding: {
+                bottom: 120px;
+                top: 20px;
+            }
+
+            ;
+
+            h4 {
+                font-size: 3.5rem !important;
+            }
+
+            p {
+                font-size: 1.1rem !important;
+            }
+        }
+    }
+
+    @include maxMediaB(330px) {
+        .desc-side {
+
+            // padding-bottom: 120px;
+            h4 {
+                font-size: 2.3rem !important;
+            }
+        }
+    }
+
+
+    background: $secondary-bg;
+    height: 100vh;
+
+    .container {
+        color: white;
+
+        .desc-side {
+
+            display: flex;
+            flex-direction: column;
+            padding-top: 150px;
+
+            h4 {
+                font-size: 5rem;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+
+            small {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+                &:hover {
+                    color: rgb(0, 187, 201);
+                }
+            }
+
+            p {
+                color: #e1dfdf;
+                margin: 10px 0px;
+                font-size: 1.4rem;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+        }
+
+        .svg-side {
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 150px;
+                animation-duration: 1s;
+                transition: transform 1s linear;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+//services section starting
+.services {
+    @include maxMediaB(330px) {
+        .services {
+            margin-top: 18%;
+        }
+
+        .card {
+            overflow: hidden;
+
+            // margin-bottom: 40px;
+            &-body {
+                padding-bottom: 10px;
+            }
+
+            &-text {
+                padding: 10px 0px;
+                // overflow: hidden;
+                display: block;
+
+                h4 {
+                    font-size: 1.8rem !important;
+                    border-bottom: 2px solid rgb(255, 255, 255);
+                    padding-bottom: 5px;
+                }
+
+                p {
+                    font-size: .9rem !important;
+                }
+            }
+        }
+    }
+
+    &-head {
+
+        // text-align: center;
+        div {
+            h1 {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                display: inline-block;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: rgb(0, 95, 95);
+                }
+            }
+        }
+    }
+
+    padding-top: 20px;
+    margin-top: 15%;
+
+    .row {
+        padding: 0px 10px;
+
+        .card {
+            margin-bottom: 15%;
+            box-shadow: 0px 0px 5px 1px rgb(54, 54, 54);
+            height: 350px;
+
+            &-body {
+                @include flexing(column, center, center);
+                background: rgba(0, 8, 46, 0.82);
+            }
+
+            &-text {
+                text-align: center;
+                color: rgba(219, 219, 219, 0.726);
+                transition: all .5s linear;
+
+                &:hover {
+                    color: #fff;
+                }
+
+                h4 {
+
+                    font-size: 2.3rem;
+                    margin: .34rem 0rem;
+                }
+
+                small {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    text-transform: uppercase;
+                    font-style: italic;
+                    font-weight: bolder;
+
+                    &:hover {
+                        color: rgb(0, 187, 201);
+                    }
+                }
+
+                p {
+                    margin: 10px 0px;
+                }
+            }
+        }
+
+        .cardA {
+            background: url('../images/pic.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+
+        .cardB {
+            background: url('../images/canstockphoto6106398.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+    }
 }

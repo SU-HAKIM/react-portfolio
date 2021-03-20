@@ -1,0 +1,8 @@
+@use "./config"as *;
+
+.temp-bg,
+.temp-bg:focus {
+    background: $secondary-bg;
+    outline: none;
+    color: white;
+}

@@ -1,23 +1,104 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.72.0">
-    <title>Album example · Bootstrap</title>
-<link rel="stylesheet" href="./bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-<link rel="stylesheet" href="./dist/scss/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./dist/scss/main.css">
 </head>
 
 <body>
+    <!-- navbar starts here -->
 
-    
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MDB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2 temp-bg" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
+    <!-- navbar ends here -->
+    <!-- main section starts -->
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 desc-side">
+                    <h4>SU Hakim</h4>
+                    <small>A Full stack Web developer</small>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolores. Repellat quibusdam
+                        cum incidunt amet atque fugit aperiam eum modi. Doloribus reprehenderit numquam officiis
+                        dolorem.</p>
+                </div>
+                <div class="col-lg-6 svg-side">
+                    <img src="./images/undraw_Ride_a_bicycle_2yok.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- services -->
+        <div class="services" id='services'>
+            <div class="container">
+                <div class="row services-head p-4">
+                    <div class="col-12 p-1">
+                        <h4>Services that i offer : </h4>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col-lg-6">
+                   <div class="card cardA">
+                        <div class="card-body">
+                            <div class="card-text">
+                                <h4>FrontEnd Development</h4>
+                                <small>with scss and React</small>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam laudantium at placeat nihil recusandae nisi quis quidem nemo. Libero omnis accusantium corporis obcaecati distinctio harum sit doloribus quidem ex! Optio praesentium repellat quidem cumque totam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                     <div class="card cardB">
+                        <div class="card-body">
+                            <div class="card-text">
+                                <h4>BackEnd development</h4>
+                                <small>with php and laravel</small>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, illo ea ducimus in quaerat non eius culpa libero eaque consequuntur iusto natus, voluptas atque iste itaque quod illum maiores voluptates nemo consequatur quibusdam corrupti quasi?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- main section ends -->
 </body>
-<script type='module' src="./dist/js/main.js"></script>
-<script type='module' src="./bootstrap.min.js"></script>
+<script src="./bootstrap.min.js"></script>
+<script src="./dist/js/main.js"></script>
+
 </html>
