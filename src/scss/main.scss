@@ -491,6 +491,12 @@ body {
 // end
 //about
 .about {
+    @include maxMediaA(990px) {
+        .about-right {
+            display: none;
+        }
+    }
+
     &-head {
         padding-bottom: 10px;
         display: inline-block;
@@ -556,8 +562,15 @@ body {
 
 //contact
 .contact {
+    @include maxMediaB(330px) {
+        form {
+            width: 100%;
+        }
+    }
+
     &-head {
         padding-bottom: 10px;
+        // padding-left: 150px;
         display: inline-block;
 
         h4 {
@@ -591,6 +604,24 @@ body {
             outline: none;
             resize: none;
             border: none;
+        }
+    }
+}
+
+//footer
+.footer {
+
+    .foot-left,
+    .foot-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foot-right {
+        a {
+            margin: 0px 5px;
         }
     }
 }

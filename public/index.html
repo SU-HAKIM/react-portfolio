@@ -16,9 +16,9 @@
 <body>
     <!-- navbar starts here -->
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id='navbar'>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">MDB</a>
+            <a class="navbar-brand" href="index.html">MDB<i class="fab fa-accusoft"></i></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -52,7 +52,7 @@
 
     <!-- navbar ends here -->
     <!-- main section starts -->
-    <div class="main">
+    <div class="main" id='main'>
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 desc-side">
@@ -162,10 +162,10 @@
         </div>
         <!-- contact starts -->
         <div class="contact p-5" id='contact'>
-            <div class="container w-75">
+            <div class="container">
                 <div class="row contact-head">
                     <h4>Contact Me :</h4> </div>
-                <form action="mailto:bmsuhakim@gmail.com" method='POST' enctype="text/plain" class='was-validate'>
+                <form action="mailto:bmsuhakim@gmail.com" method='POST' enctype="text/plain" class='was-validated w-75 m-auto'>
                 <div class="form-group">
                     <input class='form-control' type="text" placeholder="User Name" required>
                     <div class="valid-feedback">Successfull</div>
@@ -186,14 +186,18 @@
         </div>
     
     <!-- footer -->
-    <div class='footer'>
+    <div class='footer p-3'>
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    
+                <div class="col-lg-6 foot-left">
+                    <span class='px-2'><span class='text-warning'>coryRight &copy;</span> SU Hakim</span>
+                    <a href='#main'>Top..</a>
                 </div>
-                <div class="col-lg-6">
-                    <a href='index.html'>Top..</a>
+                <div class="col-lg-6 foot-right">
+                    <a class='text-white' target='_blank' href='#'><i class="fab fa-facebook"></i></a>
+                    <a class='text-white' target='_blank' href='#'><i class="fab fa-instagram"></i></a>
+                    <a class='text-white' target='_blank' href='https://www.github.com/SU-HAKIM'><i class="fab fa-github"></i></a>
+                    <a class='text-white' target='_blank' href='#'><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
